@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated 60-Image Gallery</title>
+    <link rel="stylesheet" href="IMAGE11.CSS">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Curated Photo Gallery</h1>
+        
+        <div class="filter-buttons">
+            <button class="btn active" onclick="filterImg('all')">All</button>
+            <button class="btn" onclick="filterImg('nature')">Nature</button>
+            <button class="btn" onclick="filterImg('city')">City</button>
+            <button class="btn" onclick="filterImg('tech')">Tech</button>
+            <button class="btn" onclick="filterImg('people')">People</button>
+        </div>
+
+        <div class="gallery" id="image-grid">
+            </div>
+    </div>
+
+    <div id="lightbox" class="modal">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+        <img class="modal-content" id="full-img">
+        <button class="nav-btn next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="image33.js"></script>
+</body>
+</html>
